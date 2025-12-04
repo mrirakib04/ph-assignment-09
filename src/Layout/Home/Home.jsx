@@ -4,6 +4,7 @@ import Banner from "./HomeElements/Banner";
 import PopularSkills from "./HomeElements/PopularSkills";
 import TopRatedProviders from "./HomeElements/TopRatedProviders";
 import HowItWorks from "./HomeElements/HowItWorks";
+import Categories from "./HomeElements/Categories";
 
 const Home = () => {
   const { name } = useContext(MainContext);
@@ -14,6 +15,7 @@ const Home = () => {
       <PopularSkills></PopularSkills>
       <TopRatedProviders></TopRatedProviders>
       <HowItWorks></HowItWorks>
+      <Categories></Categories>
     </div>
   );
 };
