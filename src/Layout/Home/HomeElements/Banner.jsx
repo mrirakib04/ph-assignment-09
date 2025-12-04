@@ -24,21 +24,21 @@ const Banner = () => {
     >
       <SwiperSlide>
         <img
-          className="mx-auto w-full lg:max-h-[500px] sm:max-h-[400px] max-h-[300px]"
+          className="mx-auto w-full lg:max-h-[420px] sm:max-h-[300px] max-h-[300px]"
           src={banner1}
           alt="banner-image"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          className="mx-auto w-full lg:max-h-[500px] sm:max-h-[400px] max-h-[300px]"
+          className="mx-auto w-full lg:max-h-[420px] sm:max-h-[300px] max-h-[300px]"
           src={banner2}
           alt="banner-image"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
-          className="mx-auto w-full lg:max-h-[500px] sm:max-h-[400px] max-h-[300px]"
+          className="mx-auto w-full lg:max-h-[420px] sm:max-h-[300px] max-h-[300px]"
           src={banner3}
           alt="banner-image"
         />
