@@ -21,8 +21,8 @@ const Navbar = () => {
         setNavShow(false);
       }}
     >
-      <div className="bg-sky-100/90 bg-opacity-90 w-full fixed z-50">
-        <div className="text-black flex justify-between items-center py-4 md:px-6 sm:px-3 px-2 mx-auto shadow-md">
+      <div className="w-full fixed z-50">
+        <div className="text-black bg-sky-100/90 w-full max-w-6xl mx-auto flex justify-between items-center py-2 mt-2 rounded-full px-2 shadow-md">
           <div className="relative text-xl flex gap-3 font-bold items-center">
             <div className="flex">
               <button className="lg:hidden text-2xl" onClick={navShowHide}>
@@ -57,6 +57,16 @@ const Navbar = () => {
                           ? "border-sky-600 text-sky-700 border-2 py-2 px-4 rounded-lg"
                           : "border-2 border-transparent py-2 px-4 rounded-lg"
                       }
+                      to="/about"
+                    >
+                      About
+                    </NavLink>
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive
+                          ? "border-sky-600 text-sky-700 border-2 py-2 px-4 rounded-lg"
+                          : "border-2 border-transparent py-2 px-4 rounded-lg"
+                      }
                       to="/profile"
                     >
                       My Profile
@@ -71,9 +81,6 @@ const Navbar = () => {
                 src={logo}
                 alt="logo"
               />
-              <h1 className="md:text-xl text-lg font-bold sm:block hidden group-hover:text-cyan-700 duration-300">
-                SkillSwap
-              </h1>
             </Link>
           </div>
           <div className="lg:flex gap-3 font-bold text-base hidden">
@@ -81,7 +88,7 @@ const Navbar = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "py-1 bg-sky-300 shadow-lg px-4 rounded-lg border-b-2 border-white"
+                    ? "hover:text-purple-700 duration-300 text-sky-800 transition px-3 py-1 rounded-md shadow-md hover:shadow-lg bg-linear-to-t from-purple-200 hover:to-white hover:from-purple-200 to-orange-100"
                     : "py-1 px-4 rounded-lg border-b-2 border-transparent hover:text-cyan-700 duration-300"
                 }
                 to="/"
@@ -91,7 +98,7 @@ const Navbar = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "py-1 bg-sky-300 shadow-lg px-4 rounded-lg border-b-2 border-white"
+                    ? "hover:text-purple-700 duration-300 text-sky-800 transition px-3 py-1 rounded-md shadow-md hover:shadow-lg bg-linear-to-t from-purple-200 hover:to-white hover:from-purple-200 to-orange-100"
                     : "py-1 px-4 rounded-lg border-b-2 border-transparent hover:text-cyan-700 duration-300"
                 }
                 to="/skills"
@@ -101,7 +108,17 @@ const Navbar = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "py-1 bg-sky-300 shadow-lg px-4 rounded-lg border-b-2 border-white"
+                    ? "hover:text-purple-700 duration-300 text-sky-800 transition px-3 py-1 rounded-md shadow-md hover:shadow-lg bg-linear-to-t from-purple-200 hover:to-white hover:from-purple-200 to-orange-100"
+                    : "py-1 px-4 rounded-lg border-b-2 border-transparent hover:text-cyan-700 duration-300"
+                }
+                to="/about"
+              >
+                About
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "hover:text-purple-700 duration-300 text-sky-800 transition px-3 py-1 rounded-md shadow-md hover:shadow-lg bg-linear-to-t from-purple-200 hover:to-white hover:from-purple-200 to-orange-100"
                     : "py-1 px-4 rounded-lg border-b-2 border-transparent hover:text-cyan-700 duration-300"
                 }
                 to="/profile"

@@ -9,6 +9,7 @@ import Register from "../Layout/Auth/Register";
 import Skills from "../Layout/Skills/Skills";
 import IsLogin from "./Security/IsLogin";
 import Forgot from "../Layout/Auth/Forgot";
+import About from "../Layout/About/About";
 
 const Router = () => {
   return (
@@ -32,6 +33,7 @@ const Router = () => {
             }
           ></Route>
           <Route path="/skills" element={<Skills></Skills>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
           <Route
             path="/skill/:id"
             element={

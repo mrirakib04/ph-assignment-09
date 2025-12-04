@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="max-w-[1480px] mx-auto w-full h-screen flex flex-col items-center">
       <Navbar></Navbar>
-      <div className="py-10 w-full"></div>
+      <div className="py-12 w-full"></div>
       <div className="flex-1 w-full">
         <Outlet></Outlet>
       </div>
