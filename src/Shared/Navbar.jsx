@@ -67,10 +67,22 @@ const Navbar = () => {
                           ? "border-sky-600 text-sky-700 border-2 py-2 px-4 rounded-lg"
                           : "border-2 border-transparent py-2 px-4 rounded-lg"
                       }
-                      to="/profile"
+                      to="/contact"
                     >
-                      My Profile
+                      Contact
                     </NavLink>
+                    {user && (
+                      <NavLink
+                        className={({ isActive }) =>
+                          isActive
+                            ? "border-sky-600 text-sky-700 border-2 py-2 px-4 rounded-lg"
+                            : "border-2 border-transparent py-2 px-4 rounded-lg"
+                        }
+                        to="/profile"
+                      >
+                        My Profile
+                      </NavLink>
+                    )}
                   </ul>
                 </div>
               )}
@@ -121,10 +133,22 @@ const Navbar = () => {
                     ? "hover:text-purple-700 duration-300 text-sky-800 transition px-3 py-1 rounded-md shadow-md hover:shadow-lg bg-linear-to-t from-purple-200 hover:to-white hover:from-purple-200 to-orange-100"
                     : "py-1 px-4 rounded-lg border-b-2 border-transparent hover:text-cyan-700 duration-300"
                 }
-                to="/profile"
+                to="/contact"
               >
-                My Profile
+                Contact
               </NavLink>
+              {user && (
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "hover:text-purple-700 duration-300 text-sky-800 transition px-3 py-1 rounded-md shadow-md hover:shadow-lg bg-linear-to-t from-purple-200 hover:to-white hover:from-purple-200 to-orange-100"
+                      : "py-1 px-4 rounded-lg border-b-2 border-transparent hover:text-cyan-700 duration-300"
+                  }
+                  to="/profile"
+                >
+                  My Profile
+                </NavLink>
+              )}
             </ul>
           </div>
           {user ? (
@@ -175,14 +199,14 @@ const Navbar = () => {
             <div className="flex gap-3 text-black">
               <Link
                 to="/login"
-                className="flex gap-2 items-center sm:px-5 p-2 bg-white rounded-full text-2xl border border-gray-500"
+                className="flex gap-2 items-center sm:px-2 p-1 hover:bg-black hover:text-white transition duration-300 bg-white rounded-full text-2xl border border-gray-500"
               >
                 <p className="text-lg font-medium sm:block hidden">Login</p>
                 <FiLogIn></FiLogIn>
               </Link>
               <Link
                 to="/register"
-                className="flex gap-2 items-center sm:px-5 p-2 bg-white rounded-full text-2xl border border-gray-500"
+                className="flex gap-2 items-center sm:px-2 p-1 hover:bg-black hover:text-white transition duration-300 bg-white rounded-full text-2xl border border-gray-500"
               >
                 <p className="text-lg font-medium sm:block hidden">Register</p>
                 <FaArrowAltCircleUp></FaArrowAltCircleUp>
